@@ -1,0 +1,201 @@
+$blue: rgba(66, 72, 128, 1);
+$blue_light: rgba(243, 247, 252, 1);
+$gold: rgba(173, 128, 36, 1);
+$black: rgba(54, 61, 76, 1);
+$grey: rgba(87, 97, 111, 1);
+$white: rgba(255, 255, 255, 1);
+
+.mainscreen {
+  width: 100%;
+  .main {
+    background-color: $blue_light;
+    max-width: 1336px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 67px;
+    .main_photo {
+      margin-bottom: -5px;
+    }
+    .main_text {
+      background-color: $blue_light;
+      align-self: center;
+
+      .main_text_all {
+        max-width: 480px;
+        p {
+          max-width: 480px;
+        }
+
+        .main_text_buttons {
+          display: flex;
+          align-items: center;
+          .link {
+            margin-left: 24px;
+          }
+        }
+        .header1 {
+          font-size: 51px !important;
+          line-height: 107.44%;
+          margin-bottom: 25px;
+          margin-top: 0;
+        }
+        p {
+          padding-bottom: 14px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+//industry
+.industry {
+  .industry_all {
+    background: linear-gradient(263.7deg, #eee4d0 6.62%, #f3f7fc 95.78%);
+    max-width: 1334px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 67px 170px 0 67px;
+    .industry_text {
+      max-width: 500px;
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-bottom: 15px;
+      }
+    }
+    .circle {
+      margin: 10px 0 60px;
+    }
+    .circle2 {
+      display: none;
+    }
+  }
+}
+.partnered {
+  text-align: center;
+  margin: 0 16px 60px 16px;
+}
+
+@media (max-width: 1300px) {
+  .mainscreen {
+    .main {
+      padding-left: 0;
+
+      .main_text {
+        padding-left: 20px;
+        padding-right: 20px;
+        .main_text_all {
+          .main_text_buttons {
+            .link {
+              margin-left: 0;
+              margin-top: 20px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+      .main_photo {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .mainscreen {
+    .main {
+      .main_text {
+        .main_text_all {
+          .header1 {
+            font-size: 38px !important;
+            font-weight: 400;
+            line-height: 46px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          p {
+            padding-bottom: 10px;
+          }
+        }
+      }
+      .main_photo {
+        align-self: center;
+      }
+    }
+  }
+
+  .industry {
+    .industry_all {
+      background: linear-gradient(180deg, #f3f7fc 0%, #efe5d1 100%);
+      flex-direction: column;
+      align-items: center;
+      padding: 31px 15px 0;
+      .industry_text {
+        h2 {
+          margin-top: 0;
+        }
+      }
+      .circle {
+        display: none;
+      }
+      .circle2 {
+        display: block;
+        margin-top: 37px;
+        margin-bottom: 30px;
+        width: 241px;
+      }
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .main {
+    padding-top: 68px;
+    .main_text {
+      padding-bottom: 40px;
+      .header1 {
+        padding-top: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .mainscreen {
+    .main {
+      flex-direction: column;
+
+      .main_text {
+        padding: 0 20px 40px;
+        .main_text_all {
+          max-width: 480px;
+          .main_text_buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .link {
+              margin-left: 0;
+              margin-top: 20px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+      .main_photo {
+        align-self: center;
+      }
+    }
+  }
+}
